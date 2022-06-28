@@ -100,6 +100,9 @@ static Key keys[] = {
 	TAGKEYS(                        XK_underscore,             7)
 	TAGKEYS(                        XK_ccedilla,               8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+
+    /* My bindings */
+	{ MODKEY|ShiftMask, XK_l, spawn, SHCMD("slock") },
 };
 
 /* button definitions */
