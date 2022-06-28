@@ -104,7 +104,7 @@ static Key keys[] = {
 
     /* My bindings */
 	{ MODKEY, XK_b, spawn, SHCMD("brave-browser") },
-	{ MODKEY|ShiftMask, XK_l, spawn, SHCMD("slock") },
+	{ ControlMask|MODKEY, XK_l, spawn, SHCMD("slock") },
 	{ MODKEY|ShiftMask, XK_b, spawn, SHCMD("brave-browser --incognito") },
 };
 
