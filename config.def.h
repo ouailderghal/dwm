@@ -80,7 +80,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
+	/* { MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} }, */
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
@@ -104,6 +104,7 @@ static Key keys[] = {
 
     /* My bindings */
 	{ MODKEY, XK_b, spawn, SHCMD("brave-browser") },
+	{ MODKEY, XK_f, spawn, SHCMD("thunar") },
 	{ MODKEY|ShiftMask, XK_d, spawn, SHCMD("xfce4-appfinder") },
 	{ ControlMask|MODKEY, XK_l, spawn, SHCMD("slock") },
 	{ MODKEY|ShiftMask, XK_b, spawn, SHCMD("brave-browser --incognito") },
